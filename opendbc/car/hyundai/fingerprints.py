@@ -232,12 +232,39 @@ FW_VERSIONS = {
       b'\xf1\x00TL__ FCA F-CUP      1.00 1.01 99110-D3500         ',
       b'\xf1\x00TL__ FCA F-CUP      1.00 1.02 99110-D3510         ',
       b'\xf1\x00TL__ FCA FHCUP      1.00 1.02 99110-D3500         ',
+      b'\xf1\x00NX4__               1.01 1.02 99110-N9000         ',
+      b'\xf1\x8b "\x08%',
     ],
     (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\x00TL  MFC  AT KOR LHD 1.00 1.02 95895-D3800 180719',
       b'\xf1\x00TL  MFC  AT KOR LHD 1.00 1.06 95895-D3800 190107',
       b'\xf1\x00TL  MFC  AT USA LHD 1.00 1.06 95895-D3800 190107',
+      b'\xf1\x00NX4 FR_CMR AT EUR LHD 1.00 1.00 99211-N9240 14Q',
+      b'\xf1\x8b "\x10%',
     ],
+    (Ecu.cornerRadar, 0x7b7, None): [
+      b'\xf1\x003D',
+      b'\xf1\x8b "\x08\x08',
+    ],
+    (Ecu.combinationMeter, 0x7c6, None): [
+      b'\xf1\x00064',
+      b'\xf1\x8b "\x08\'',
+    ],
+    (Ecu.hvac, 0x7b3, None): [
+      b'\xf1\x00TL  MFC  AT KOR LHD 1.00 1.02 95895-D3800 180719',
+      b'\xf1\x00TL  MFC  AT KOR LHD 1.00 1.06 95895-D3800 190107',
+      b'\xf1\x00TL  MFC  AT USA LHD 1.00 1.06 95895-D3800 190107',
+      b"\xf1\x00NX4e  97255-CZ021CONTROL ASS'Y-HEV   1.04 NX4e HEV DATC(-)0.7 ",
+    ],
+    (Ecu.eps, 0x7d4, None): [
+      b'\xf1\x00NX4 MDPS R 1.00 1.01 57700-R2000',
+    ],
+    (Ecu.transmission, 0x7e1, None): [
+      b'\xf1\x00PSBG2441  G15\x00\x00\x00\x00\x00\x00\x00SNX4T16XXHG15YB2\xe5\xe3\xad\xd0',
+    ],
+    (Ecu.transmission, 0x7e1, None): [
+      b'\xf1\x00PSBG2441  G15\x00\x00\x00\x00\x00\x00\x00SNX4T16XXHG15YB2\xe5\xe3\xad\xd0',
+    ],   
   },
   CAR.HYUNDAI_SANTA_FE: {
     (Ecu.fwdRadar, 0x7d0, None): [
